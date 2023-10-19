@@ -1,8 +1,10 @@
 import functions.log as fl
+import os
+up=os.getcwd()
 def sign_up(player_id, player_password):
     check_log=0
-    id=open("C:/project/player/player_id.txt", 'r+', encoding='utf-8')
-    password=open("C:/project/player/player_password.txt", 'r+', encoding='utf-8')
+    id=open(f"{up}/project/player/player_id.txt", 'r+', encoding='utf-8')
+    password=open(f"{up}/project/player/player_password.txt", 'r+', encoding='utf-8')
     cnt=0
     check=0
     id.seek(0)
